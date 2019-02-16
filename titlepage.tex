@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{xcolor,graphicx}
+\usepackage[UTF8]{ctex}
+\usepackage{newtxtext}
+
+\definecolor{main}{RGB}{0,120,2}%
+\definecolor{second}{RGB}{230,90,7}%
+\definecolor{third}{RGB}{0,160,152}%
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=27mm,  %% or inner=23mm
+	right=27mm, %% or outer=18mm
+	top=25.4mm, bottom=25.4mm,
+	headheight=2.17cm,
+	headsep=4mm,
+	footskip=12mm
+}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.5} 
+
+\begin{document}
+
+\begin{titlepage}
+\color{second}
+	\begin{center}
+   	\setstretch{2.3}
+   	\bfseries
+	\vfill
+	\vspace*{2cm}
+	{\rule{0.9\textwidth}{2pt}}\\[3ex]
+	{\Huge\color{main} A Long Long Long Long Long Long Long Title}
+	\vskip5ex
+    {\Huge \color{main} 一个中文长标题长标题标题题}
+	{\rule{0.9\textwidth}{2pt}}\\ 
+    \vfill
+    \includegraphics[width=0.35\textwidth]{logo}
+    \vfill
+    \end{center}
+
+	\begin{flushright}
+	\normalfont
+	\rule{0.45\textwidth}{1pt}\\
+	作者：{\color{main} ddswhu}\\
+	时间：{\color{main} \today}\\
+	邮箱：{\color{main} ddswhu@outlook.com}\\
+	\rule{0.45\textwidth}{1pt}
+	\end{flushright}
+\end{titlepage}
+
+\end{document}

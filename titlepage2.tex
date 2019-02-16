@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{xcolor,graphicx}
+\usepackage[UTF8]{ctex}
+\usepackage{newtxtext}
+
+\definecolor{main}{RGB}{0,120,2}%
+\definecolor{second}{RGB}{230,90,7}%
+\definecolor{third}{RGB}{0,160,152}%
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=27mm,  %% or inner=23mm
+	right=27mm, %% or outer=18mm
+	top=25.4mm, bottom=25.4mm,
+	headheight=2.17cm,
+	headsep=4mm,
+	footskip=12mm
+}
+\usepackage{setspace,xcolor}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds,calc}
+\definecolor{main}{RGB}{0,120,2}%
+\definecolor{second}{RGB}{230,90,7}%
+\definecolor{third}{RGB}{0,160,152}%
+
+\begin{document}
+
+\begin{titlepage}
+	\newpage
+	\newgeometry{margin = 0in}
+	\parindent=0pt
+	\renewcommand\baselinestretch{2.5}
+	\includegraphics[width=\linewidth]{ceshi.jpg}
+	\setlength{\fboxsep}{0pt}
+	\colorbox{second}{\makebox[\linewidth][c]{\shortstack[c]{\vspace{0.5in}}}}
+	\vfill
+	\hfill
+	\begin{minipage}[c]{0.618\linewidth}
+		{
+		\bfseries\Huge ElegantBook: An Elegant \LaTeX{} Template for Books \\[1ex]
+		\huge 优美的 \LaTeX{} 书籍模板\\[1ex]}
+		\color{black}\kaishu\normalsize
+		{\renewcommand{\arraystretch}{0.618}
+		\begin{tabular}{l} 
+			作者：邓东升   \\ 
+			版本: 0.06 \\ 
+			组织：Elegant\LaTeX{} \\
+			更新: \today
+		\end{tabular}}
+	\end{minipage}
+	\hspace{2em}
+	\begin{minipage}[c]{0.26\linewidth}
+	\begin{tikzpicture}[remember picture,overlay]
+		\begin{pgfonlayer}{background}
+		  \node[opacity=1,anchor=south east,outer sep=0pt,inner sep=0pt] at ($(current page.south east) +(-0.8in,1.5in)$) {\includegraphics[width=0.7\textwidth]{logo.png}};
+		\end{pgfonlayer}
+	\end{tikzpicture}
+	\end{minipage}
+	\vfill
+	\centerline{\itshape Victory won't come to me unless I go to it.— M. Moore}
+	\vfill
+	\restoregeometry
+\end{titlepage}
+
+\end{document}
